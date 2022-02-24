@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="Tasker_App.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Tasker_App"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="Azure">
+
+    <Grid Loaded="PageLoadConnect">
+        <TextBlock Text="Tujuan" Margin="50,108,684,524" FontSize="48" RenderTransformOrigin="0.493,0.398" OpticalMarginAlignment="None" TextAlignment="Center"></TextBlock>
+        <TextBox x:Name="TextBox" Margin="50,228,678,406" RenderTransformOrigin="0.492,0.488" TextWrapping="NoWrap"></TextBox>
+        <TextBox x:Name="TextBox1" Margin="678,228,50,406" RenderTransformOrigin="0.492,0.488" TextWrapping="NoWrap"/>
+        <Button x:Name="Button" Background="#33000000" Width="380" Height="105" HorizontalAlignment="Center" Margin="0,360,0,0" VerticalAlignment="Top" Content="Kirim Data" FontSize="48" IsEnabled="False" Click="SendData"/>
+        <Button x:Name="Button1" Background="#33000000" Width="380" Height="105" HorizontalAlignment="Center" Margin="0,508,0,0" VerticalAlignment="Top" Content="Disconnect" FontSize="48" IsEnabled="False" Click="CloseRMQ"/>
+        <TextBlock Text="Pesan (Angka)" Margin="678,108,56,524" FontSize="48" RenderTransformOrigin="0.493,0.398" OpticalMarginAlignment="None" TextAlignment="Center"/>
+
+    </Grid>
+</Page>
